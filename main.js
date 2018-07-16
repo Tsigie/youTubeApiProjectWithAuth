@@ -1,12 +1,12 @@
 // Options
-const CLIENT_ID = '';
+const CLIENT_ID = '987907219473-5gq8in5n2ntpum6gkun97l0nm13moguj.apps.googleusercontent.com';
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
 const authorizeButton = document.getElementById('authorize-button');
 const signoutButton = document.getElementById('signout-button');
 const content = document.getElementById('content');
-const cannelForm = document.getElementById('channel-form');
+const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('vidio-container');
 
