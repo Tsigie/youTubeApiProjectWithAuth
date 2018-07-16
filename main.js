@@ -13,7 +13,7 @@ const videoContainer = document.getElementById('vidio-container');
 const defaultChannel = 'techguyweb';
 
 // Form submit and change channel
-channelForm.addEventListner('submit', e => {
+channelForm.addEventListener('submit', e => {
   e.preventDefault();
 
   const channel = channelInput.value;
@@ -28,9 +28,9 @@ function handleClientLoad() {
 // Init API client library and set up sign in listeners
 function initClient() {
   gapi.client.init({
-    discovryDocs: DISCOVERY_DOCS,
+    discoveryDocs: DISCOVERY_DOCS,
     clientId: CLIENT_ID,
-    scope: SCOPE
+    scope: SCOPES
   }).then(() => {
     // Listen for sign in state changes
     gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
